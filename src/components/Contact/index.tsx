@@ -1,39 +1,38 @@
+import Button from '@devbyaj/dev-ui/components/Button';
+
 import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-12 bg-[#fcf9f9] px-4 py-12 md:flex-row">
-      <div className="mb-12 flex max-w-xl flex-1 flex-col items-start justify-center md:mb-0">
-        <h1 className="mb-8 font-mono text-4xl leading-tight md:text-5xl">
-          Let's make something amazing
-          <br />
-          together.
-        </h1>
-        <p className="mb-8 font-mono text-2xl">
-          Starts by{' '}
-          <a
-            href="#contact"
-            className="text-blue-500 underline transition-all duration-300 hover:animate-bounce hover:text-blue-700"
-          >
-            saying hi
-          </a>
-        </p>
-        <a
-          href="/AjayKumar_CV.pdf"
-          download
-          className="mt-4 rounded bg-blue-500 px-6 py-2 font-mono text-white shadow transition-colors hover:bg-blue-600"
+    <div className="flex items-center justify-center gap-12 bg-secondary px-4 py-12">
+      <div className="flex max-w-3xl flex-1 flex-col items-start justify-center">
+        <div
+          className="mb-8 w-full flex-1 text-4xl tracking-widest"
+          style={{ wordSpacing: '0.4em' }}
         >
+          <p className="mb-2">Let’s collaborate to make</p>
+          <p>something exceptional.</p>
+        </div>
+        <p
+          className="font-mono mb-6 mt-10 text-2xl tracking-widest"
+          style={{ wordSpacing: '0.3em' }}
+        >
+          Starts by{' '}
+          <span className="text-brand-primary underline">saying hi</span>
+        </p>
+        <Button className="py-1 text-xl text-brand-primary-text/90">
           Download CV
-        </a>
+        </Button>
       </div>
-      {/* Right Section */}
-      <div className="flex w-full max-w-xl flex-1 flex-col items-start">
-        <div className="mb-6">
-          <div className="mb-2 font-mono text-gray-500">Information</div>
-          <div className="mb-1 font-mono text-2xl">
+      <div className="flex w-full max-w-2xl flex-1 flex-col items-start gap-6">
+        <div>
+          <div className="font-mono mb-10 text-2xl tracking-wider text-secondary/80">
+            Information
+          </div>
+          <div className="font-mono mb-1 text-3xl text-primary/60">
             Bangalore, Karnataka, India
           </div>
-          <div className="font-mono text-3xl font-bold">
+          <div className="font-mono mt-4 text-3xl text-primary">
             ajaykr.dev914@gmail.com
           </div>
         </div>

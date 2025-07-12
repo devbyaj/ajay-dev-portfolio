@@ -1,34 +1,38 @@
+import Button from '@devbyaj/dev-ui/components/Button';
+import Input from '@devbyaj/dev-ui/components/Input';
+import TextArea from '@devbyaj/dev-ui/components/TextArea';
+
 import Card from 'components/shared/Card';
 
 const ContactForm = () => {
   return (
-    <Card className="flex min-w-lg flex-col items-center justify-start overflow-hidden rounded-lg border border-blue-400 bg-[#f6f3f3] p-6 shadow-lg">
-      <form className="relative z-10 flex w-full flex-col gap-6">
-        <h2 className="mb-2 w-full border-b border-blue-400 px-1 pb-1 font-mono text-lg text-blue-500">
+    <Card className="shadow-lg flex w-full max-w-xl flex-col items-center justify-start overflow-hidden rounded-lg border-2 border-brand-primary p-6">
+      <form className="flex w-full flex-col gap-3">
+        <p className="mb-2 w-fit border-b border-brand-primary/90 text-lg text-brand-primary/90">
           Get in touch
-        </h2>
-        <input
+        </p>
+        <Input
           type="text"
           placeholder="Name"
-          className="border-b border-blue-400 bg-transparent px-1 py-2 text-gray-700 placeholder-gray-500 transition-colors focus:border-blue-600 focus:outline-none"
+          className="rounded-none border-0 border-b-2 border-brand-primary bg-transparent focus-within:ring-0"
+          inputClassName="bg-transparent text-xl placeholder:text-lg placeholder:text-primary/50"
         />
-        <input
+        <Input
           type="email"
           placeholder="Email"
-          className="border-b border-blue-400 bg-transparent px-1 py-2 text-gray-700 placeholder-gray-500 transition-colors focus:border-blue-600 focus:outline-none"
+          className="rounded-none border-0 border-b-2 border-brand-primary bg-transparent focus-within:ring-0"
+          inputClassName="bg-transparent text-xl placeholder:text-lg placeholder:text-primary/50"
         />
-        <textarea
+        <TextArea
           placeholder="Message"
-          rows={3}
-          className="resize-none border-b border-blue-400 bg-transparent px-1 py-2 text-gray-700 placeholder-gray-500 transition-colors focus:border-blue-600 focus:outline-none"
+          rows={2}
+          inputClassName="border-0 border-b-2 border-brand-primary rounded-none bg-transparent text-xl placeholder:text-lg placeholder:text-primary/50 focus:ring-0 "
         />
+
         <div className="flex justify-end">
-          <button
-            type="submit"
-            className="rounded bg-blue-500 px-6 py-2 text-white transition-colors hover:bg-blue-600 focus:outline-none"
-          >
+          <Button type="submit" className="px-4 py-1.5">
             Send
-          </button>
+          </Button>
         </div>
       </form>
     </Card>
