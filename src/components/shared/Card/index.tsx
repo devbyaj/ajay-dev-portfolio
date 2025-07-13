@@ -8,7 +8,7 @@ const Card = ({ className, children }: TCardProps) => {
   return (
     <div
       className={twMerge(
-        'card relative flex items-center justify-center bg-[#e0e0e0] transition-all duration-300 ease-in-out',
+        'card relative flex items-center justify-center border-b border-b-brand-primary-medium shadow-3 transition-all duration-300 ease-in-out',
         className,
       )}
     >

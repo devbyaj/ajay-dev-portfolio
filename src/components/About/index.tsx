@@ -3,12 +3,12 @@ import Card from 'components/shared/Card';
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-100 px-24 py-6">
+    <div className="bg-gray-100 flex flex-col items-center justify-center px-24 py-6">
       <h1 className="text-3xl">About me</h1>
-      <p className="mt-6 text-xl text-gray-400">
+      <p className="mt-6 text-xl text-primary/80">
         "Strive not to be a success, but rather to be of value!"
       </p>
-      <p className="mt-4 max-w-[40rem] text-lg text-gray-500">
+      <p className="mt-4 max-w-[40rem] text-lg text-secondary">
         Senior Software Developer at WRKSPOT, building on a strong foundation of
         skills and insights gained during my impactful journey at Meesho. I’m
         driven by a passion for solving meaningful challenges in web development

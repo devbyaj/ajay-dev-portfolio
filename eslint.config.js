@@ -48,12 +48,12 @@ export default defineConfig([
         {
           paths: [
             {
-              name: '@wrkspot/spot-ui',
+              name: '@devbyaj/dev-ui',
               message:
-                "Please use `import [package] from '@wrkspot/spot-ui/[package]'` instead.",
+                "Please use `import [package] from '@devbyaj/dev-ui/[package]'` instead.",
             },
           ],
-          patterns: ['!@wrkspot/spot-ui/*'],
+          patterns: ['!@devbyaj/dev-ui/*'],
         },
       ],
 
@@ -96,7 +96,7 @@ export default defineConfig([
               position: 'before',
             },
             {
-              pattern: '@wrkspot/spot-ui/**',
+              pattern: '@devbyaj/dev-ui/**',
               group: 'external',
               position: 'after',
             },
